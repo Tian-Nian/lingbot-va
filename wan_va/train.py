@@ -53,7 +53,7 @@ class Trainer:
             wandb.login(host=os.environ['WANDB_BASE_URL'], key=os.environ['WANDB_API_KEY'])
             self.wandb = wandb
             self.wandb.init(
-                entity=os.environ["WANDB_TEAM_NAME"],
+                # entity=os.environ["WANDB_TEAM_NAME"],
                 project=os.getenv("WANDB_PROJECT", "va_robotwin"),
                 # dir=log_dir,
                 config=config,
